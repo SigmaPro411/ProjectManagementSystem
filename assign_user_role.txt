@@ -1,0 +1,20 @@
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : Assing roles to team member
+  Arguments : role_id : Integer, team_member_id : Integer
+  Laguage: Pseudo code
+**/
+
+fuction assing_role(role_id, team_member_id){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+    // get current user role
+    user_role = get_role()
+    // check user access right
+    if (user_role == "project_manager"){
+      // assign role to team member and save the record into the database
+        assign_role_to_team_member(team_member_id, role_id).save()
+    }
+  }	
+  else redirect_to_login_page()
+}
