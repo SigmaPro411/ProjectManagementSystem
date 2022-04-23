@@ -1,0 +1,13 @@
+SIG-13 : Deadlines notifications
+
+
+There will be 2 kinds of notifications :
+ - when a project manager defines or updates a deadline of a task/project
+ - a reminder 
+
+ > This kind of notification happens when the project manager defines or updates a deadline.
+   This function can be called with “Deadlines management”. When a project deadline is defined, all users of the project will receive notification by email.
+   When a task deadline is defined, only the user assigned to the task will receive the notification.
+ > The project manager can create a reminder. That corresponds to a notification a week, for example, before the deadline.
+
+In every case, the project manager will receive a confirmation email.
