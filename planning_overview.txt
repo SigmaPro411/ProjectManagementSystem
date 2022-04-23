@@ -1,0 +1,27 @@
+/** 
+  AUTHOR : Pinar Altinisik
+  TASK DESCRIPTION : planning overview
+	** when a logged in user goes to their profile page with clicking 
+	profile button from top navigation menu, planning list which shows 
+	deadlines of upcoming tasks of that user will be displayed for the 
+	following days so that user can plan what will they do for that week.
+	 
+  Arguments : user_id : Integer
+  Laguage: Pseudo code
+
+**/
+
+function planning_overview(user_id){
+	// get user's planning overview data with tasks deadlines 
+	// from database
+	user_planning = get_user_planning_from_db(user_id)
+
+	//check if planning overview of user is empty or not
+	if (user_planning == true){
+		// return user's planning overview
+		return user_planning
+	}else{
+		return "There is no upcoming deadlines"
+	}
+
+}
