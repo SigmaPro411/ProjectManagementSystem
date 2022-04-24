@@ -1,5 +1,5 @@
 SIG-10
-Ticket Management
+TICKET MANAGEMENT
 
 As a logged in user
 I want to create a ticket
