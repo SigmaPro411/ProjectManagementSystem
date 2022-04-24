@@ -3,12 +3,14 @@ TICKET MANAGEMENT
 
 As a logged in user
 I want to create a ticket
- so that I can report a bug
+so that I can report a bug
+ 
+All team members should be allowed to create tickets used in reporting bugs or new features that needs to be built. 
+Ticket can be assigned to any team member within or outside a department in the organization. 
 
 //Users can create tickets and assign users to these tickets.
 
 Check if user has ticket
-Check 
 
 
 //The users can close tickets.
