@@ -7,7 +7,7 @@ so that i can send links to other members to join and moderate meetings. This ro
 
 1.	 User should Create a meeting
 
-2.	 If the meeting is a role organizer
+2.	 If the meeting_role is an organizer
 
       A.	User should also determine the Type of Meeting
 
