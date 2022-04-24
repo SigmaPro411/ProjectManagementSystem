@@ -5,4 +5,33 @@ As a team member
 I want to have access to create a meeting and automatically be given the role of meeting organizer. 
 so that i can send links to other members to join and moderate meetings. This role should be dropped when the meeting ends.
 
+1.	 User should Create a meeting
 
+2.	 If the meeting is a role organizer
+
+      A.	User should also determine the Type of Meeting
+
+      B.	User should Determine the Meeting Room
+
+      C.	User should Set the Date
+
+      D.	User should Determine the Meeting Duration
+
+      E.	User should Adjusting Equipment
+
+3.	 This role should be released when the meeting is over.
+
+
+{Meeting} :
+> Meeting_ID [int] : Primary key 
+- Project_ID [int] : Foreign key
+- Meeting_Type [str]
+- Meeting_Room [str]
+- Meeting_Date [date]
+- Meeting_Duration [int] : number of minutes
+- Meeting_Equipment [str]
+
+{UserToMeeting} : 
+> Meeting_ID [int] : Primary key / Foreign key
+> User_ID [int] : Primary key / Foreign key
+- Meeting_Role [str] : Organizer or participant
