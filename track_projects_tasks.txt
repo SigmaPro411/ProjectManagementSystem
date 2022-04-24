@@ -1,0 +1,25 @@
+/** 
+  AUTHOR : Pinar Altinisik
+  TASK DESCRIPTION : track projects and tasks on profile page
+	** when a logged in user goes to their profile page with clicking 
+	profile button from top navigation menu, list of projects and tasks
+	assigned to that user will be displayed.
+	 
+  Arguments : user_id : Integer
+  Laguage: Pseudo code
+
+**/
+
+function track_projects_tasks(user_id){
+	// get user's project and task data from database
+	user_projects_tasks = get_user_projects_tasks_from_db(user_id)
+
+	//check if projects and tasks assigned to user is empty or not
+	if (user_projects_tasks == true){
+		// return user's project and task data
+		return user_projects_tasks
+	}else{
+		return "There is no projects or tasks assigned to this user"
+	}
+
+}
