@@ -1,0 +1,13 @@
+Ticket Management
+
+As a logged in user
+I want to create a ticket
+ so that I can report a bug
+
+//Users can create tickets and assign users to these tickets.
+
+Check if user has ticket
+Check 
+
+
+//The users can close tickets.
