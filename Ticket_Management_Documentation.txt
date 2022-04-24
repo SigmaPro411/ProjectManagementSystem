@@ -8,9 +8,25 @@ so that I can report a bug
 All team members should be allowed to create tickets used in reporting bugs or new features that needs to be built. 
 Ticket can be assigned to any team member within or outside a department in the organization. 
 
-//Users can create tickets and assign users to these tickets.
+1. User should be able to create ticket if any issue facing in portal
 
-Check if user has ticket
+2. When user clicks on  'Ticket Management', it should redirect to  page.
 
+3. Ticket Management page consist of form in including following fields: 
+   A. Issue title- Text field
+   B. Issue description- Text area
+   C. Priority- Drop-down (high, medium,low)
 
-//The users can close tickets.
+After entering above fields when user clicks on 'Submit', auto generated ticket number will be assigned to the tickets and user will see the message "Tickets created successfully, admin team will look into it shortly"
+
+4. Admin should see the list of all tickets raised in system on Ticket Management List Page( This page is visible for admin only)
+
+5. Admin should have access to all tickets, and can also filter the tickets based on dates, priority.
+
+6. Whenever tickets is created it's status should be by default "New"
+
+7. Once Admin address the tickets, he/she can change the status from New to Active.
+
+8.Once the issue is resolved, admin can click on ticket and change  the status option from Active to Resolved.
+
+9. User should recieve email confirmation, once the status of ticket is changed.
