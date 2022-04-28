@@ -1,0 +1,8 @@
+SIG-12 : Tickets history
+
+First, the algorithm retrieve the ticket and all its information.
+It gets all tickets and put them in a list, so that it is easier to show them on a web page.
+
+Old tickets can be reopen.
+When a user wants to reopen a ticket, he clicks on a button and the algorithm changes the state of the ticket to open.
+Users can now comment this ticket.
