@@ -1,0 +1,6 @@
+SIG-11 : Tickets comments
+
+First, we have to retrieve the tickets, and all its information.
+The algorithm gets the comment from a form.
+It adds the comment in the comment list and put the new list in the database.
+Saved data are : the comment, the author and the date/time.
