@@ -29,3 +29,4 @@ system should generate message as "You have successfully attended this meeting"
 
 6. If there is a change or cancellation in the meeting, 
 an information message should be able to be sent by the organizer informing the users who will attend the meeting.
+
