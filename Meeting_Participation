@@ -1,5 +1,8 @@
 SIG-9
 
+Murat CAN
+3058780
+
 MEETING PARTICIPATION
 	
 
@@ -9,9 +12,9 @@ I want to be able to receive and view links for meetings shared and decide to jo
 so that i can participate in meetings.
 	
 
-1.	 
+1. The organizer should be able to create the link of the meeting so that it can be shared with other users	 
 	
-2.
+2. This join link must be visible among users
 	
 3. Once user click on Join the meeting Button, 
 System should show confirmation popup with message 
@@ -24,4 +27,5 @@ system should generate message as "You have successfully attended this meeting"
 
 5. If User click on "NO", confirmation popup should be closed with no action perfomed.
 
-6. 
+6. If there is a change or cancellation in the meeting, 
+an information message should be able to be sent by the organizer informing the users who will attend the meeting.
