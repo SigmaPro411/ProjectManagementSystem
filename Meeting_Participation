@@ -13,10 +13,15 @@ so that i can participate in meetings.
 	
 2.
 	
-3. 
+3. Once user click on Join the meeting Button, 
+System should show confirmation popup with message 
+" Do you want to attend the meeting?"
+	A.YES
+	B.NO
 
-4. 
+4. When user clicks on "YES" selected the link of the meeting should get join successfully and 
+system should generate message as "You have successfully attended this meeting"
 
-5.
+5. If User click on "NO", confirmation popup should be closed with no action perfomed.
 
-6.
+6. 
