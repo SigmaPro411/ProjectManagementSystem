@@ -1,0 +1,51 @@
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : Creating meetings
+  Arguments : venue : String, duration :Datetime, meeting_type :Integer
+  Laguage: Pseudo code
+**/
+
+fuction create_meeting(venue,duration,meeting_type){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+    // get meeting type
+    meeting_id = list_of_meeting_types()
+    // get meeting venu
+    meeting_venue = venue
+    // get duration of meeting
+    meeting_duration = duration
+    // get organizer details
+    organizer = session['username']
+    
+    // save details in database
+    save(meeting_id, meeting_venue, meeting_duration, organizer)
+    
+   }
+  else 
+    return "User is not logged in"
+}
+
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : view available rooms
+  Arguments : room_id : Integer
+  Laguage: Pseudo code
+**/
+
+fuction view_available_rooms(room_id){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+	// check if selected room is available
+    	is_room_available = check_room(room_id)
+
+	if is_room_available == true{
+		// mark room as used
+		update(room_id)
+		return true
+	}
+	// if room is not available, return false
+	else return False
+  }	
+  else 
+    return "User is not logged in"
+}
