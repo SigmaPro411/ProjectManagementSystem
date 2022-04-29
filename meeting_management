@@ -24,3 +24,28 @@ fuction create_meeting(venue,duration,meeting_type){
   else 
     return "User is not logged in"
 }
+
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : view available rooms
+  Arguments : room_id : Integer
+  Laguage: Pseudo code
+**/
+
+fuction view_available_rooms(room_id){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+	// check if selected room is available
+    	is_room_available = check_room(room_id)
+
+	if is_room_available == true{
+		// mark room as used
+		update(room_id)
+		return true
+	}
+	// if room is not available, return false
+	else return False
+  }	
+  else 
+    return "User is not logged in"
+}
