@@ -33,3 +33,10 @@ After entering above fields when user clicks on 'Submit', auto generated ticket 
 8.Once the issue is resolved, admin can click on ticket and change  the status option from Active to Resolved.
 	
 9. User should recieve email confirmation, once the status of ticket is changed.
+
+{Ticket} :
+> Ticket_ID [int] : Primary key
+- User_ID [int] : Foreign key
+- Ticket_Message [str]
+- Ticket_State [int] : 0 if active; 1 if closed
+
