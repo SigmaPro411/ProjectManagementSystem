@@ -1,0 +1,17 @@
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : Update ticket status
+  Arguments : ticket_id : Integer
+  Laguage: Pseudo code
+**/
+
+fuction update_status(ticket_id){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+	// update status
+    	update(ticket_id)
+	return "Ticket updated"
+  }	
+  else 
+    return "User is not logged in"
+}
