@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>SIGMA PRO</h1>
+        </div>
+
+        <!-- Navbar -->
+        <ul>
+            <li>
+                <a href="#message">
+                    <span class="icon-count">9</span>
+                    <i class="fa fa-envelope fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#notification">
+                    <span class="icon-count">19</span>
+                    <i class="fa fa-bell fa-2x"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#sign-out">
+                    <i class="fa fa-sign-out-alt fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="https://www.gstatic.com/webp/gallery3/2.png" alt="" width="100" height="100">
+
+            <div class="name">
+                User_Name
+            </div><br><br>
+
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="#profile" >Profile</a>
+                <hr align="center">
+            </div>
+          <div class="url">
+                <a href="#settings">Project</a>
+                <hr align="center">
+            </div>
+          <div class="url">
+                <a href="#settings">Meeting</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                  <a href="#settings" class="active">Ticket Management</a>
+                  <hr align="center">
+              </div>
+            <div class="url">
+                <a href="#settings">Settings</a>
+                <hr align="center">
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Main -->
+    <div class="main">
+      <form >
+       Ticket Name : <input style="width:70%;height:30px;" type = "text" name = "ticket_name" />
+       <br><br>
+       Ticket Description :<br>
+         <textarea rows = "5" cols = "107" name = "description" placeholder="Enter description here..."></textarea>
+         <br /><br>
+         <label for="pri">Priority:</label>
+      <select style="width:100px;height:30px;"name="priority" id="pri">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+
+      </select><br><br>
+      <center><input style="width:100px;height:30px" type="submit" value="SUBMIT" /></center>
+    </form>
+    </div>
+    <!-- End -->
+</body>
+</html>
