@@ -1,0 +1,18 @@
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : Reassign ticket
+  Arguments : current_process_owner_id : Integer, new_process_owner_id:Integer
+  Laguage: Pseudo code
+**/
+
+fuction reassign_ticket(ticket_id, current_process_owner_id, new_process_owner_id){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+	// remove ticket from current process owner
+    	remove_ticket(current_process_owner_id)
+	add_ticket(new_process_owner_id)
+	return "Ticket assigned successful"
+  }	
+  else 
+    return "User is not logged in"
+}
