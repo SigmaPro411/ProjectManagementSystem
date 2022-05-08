@@ -1,0 +1,16 @@
+SIG-22 : Deadlines management
+
+
+First, a deadline has to be associated to a project.
+That's why the function has to retrieve the project in the database.
+
+Then, the function has to retrieve all tasks of the project.
+The project manager can define a deadline for each of them.
+All deadlines have to be in the future.
+
+There can be a project deadline.
+If a project deadline is define, there can't be a task deadline further than this date.
+If the project manager try to define a project deadline earlier than a task deadline (that already exists),
+the function return an error.
+
+All deadlines can be modified by the project manager.

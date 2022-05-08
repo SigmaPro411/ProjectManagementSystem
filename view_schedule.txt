@@ -1,0 +1,20 @@
+/** 
+  AUTHOR : DURU CHIDI
+  TASK DESCRIPTION : view team members schedule
+  Arguments : team_member_id : Integer
+  Laguage: Pseudo code
+**/
+
+fuction view_schedule(team_member_id){
+  // check if user is logged in
+  if (is_user_logged_in() == true){
+	// get details of the user you want to view their schedule
+  user_details = get_user_details_from_db(team_member_id)
+	// get schedule from user details
+	schedule = user_details['schedule']
+  // return schedule
+	return schedule
+  }	
+  else 
+    return "User is not logged in"
+}

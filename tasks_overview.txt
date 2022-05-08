@@ -1,0 +1,42 @@
+/** 
+  AUTHOR : Pinar Altinisik
+  TASK DESCRIPTION : overview of team performance in tasks
+	** when a logged in user opens a project which they are assigned as 
+	project manager, user should be able to display an overview of project's
+	tasks and task's status to see team performance. On the project page, 
+	there should be an overview button. When this button is clicked, list
+	of all tasks, assigned users and their status will be displayed. Tasks
+	status are TO DO, IN PROGRESS and DONE. With these status manager will
+	be able to see achievement of employee.
+	 
+  Arguments : user_id : Integer, project_id: Integer
+  Laguage: Pseudo code
+
+**/
+
+function project_overview(user_id, project_id){
+	
+	// get assigned manager user id of the project using project id
+	// from database --- {UserToProject}
+	assigned_to = get_manager_assigned_to_project(project_id)
+
+	// check if user is the manager of project
+	if (user_id == assigned_to){
+
+		// get project's task overview from database
+		projects_tasks = get_project_overview_from_db(project_id)
+		
+		// get assigned users for each task
+		for i=0 to project_tasks.length){
+			assigned_user_id = get_assigned_user_for_task(project_tasks[i])
+
+			// append user id to assigned_users list
+			assigned_users.inserst(assigned_user_id)
+		}
+		return projects_tasks, assigned_users
+
+	}else{
+		return "User doesn't have the permission to display project overview"
+	}
+
+}
