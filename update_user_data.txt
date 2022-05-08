@@ -1,0 +1,27 @@
+/** 
+  AUTHOR : Pinar Altinisik
+  TASK DESCRIPTION : update personal info on profile page
+	** when a logged in user goes to their profile page with clicking 
+	profile button from top navigation menu, there will be a edit info 
+	button. When edit info button is clicked, user will be directed to 
+	a form page which they can edit their info.
+	 
+  Arguments : user_id : Integer
+  Laguage: Pseudo code
+
+**/
+
+function update_user_info(user_id, editted_form_data){
+  //check if form data is not empty
+  if (editted_form_data == true){
+	// update user data with form data on database
+	user_data = update_user_data_from_db(user_id)
+  	// return updated user_data
+	return user_data
+  }	
+  else 
+  	// get user data from database
+      user_data = get_user_data_from_db(user_id)
+	// return user data
+	return user_data
+}
