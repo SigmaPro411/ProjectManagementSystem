@@ -1,0 +1,48 @@
+SIG-28 : Database Management
+
+{User} : 
+> User_ID : Primary key [int]
+- User_Username [str]
+- User_Mobile [int]
+- User_Email [str]
+- User_Level [int] : 0 if normal user; 1 if admin
+
+{Project} :
+> Project_ID [int] : Primary Key
+- Project_Name [str]
+- Project_Deadline [date]
+
+{UserToProject} :
+> User_ID [int] : Primary key / Foreign key
+> Project_ID [int] : Primary Key / Foreign key
+- UserToProject_Type [str] : Only 3 types here : Team member, Meeting organizer, Project Manager
+
+{Meeting} :
+> Meeting_ID [int] : Primary key 
+- Project_ID [int] : Foreign key
+- Meeting_Type [str]
+- Meeting_Room [str]
+- Meeting_Date [date]
+- Meeting_Duration [int] : number of minutes
+- Meeting_Equipment [str]
+
+{UserToMeeting} : 
+> Meeting_ID [int] : Primary key / Foreign key
+> User_ID [int] : Primary key / Foreign key
+- Meeting_Role [str] : Organizer or participant
+
+{Task} :
+> Task_ID [int] : Primary key
+- Project_ID [int] : Foreign key
+- Task_Name [str]
+- Task_Deadline [date]
+
+{UserToTask} :
+> User_ID [int] : Primary key / Foreign key
+> Task_ID [int] : Primary Key / Foreign key
+
+{Ticket} :
+> Ticket_ID [int] : Primary key
+- User_ID [int] : Foreign key
+- Ticket_Message [str]
+- Ticket_State [int] : 0 if active; 1 if closed
